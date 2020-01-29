@@ -13,10 +13,11 @@ This demo is intented to showcase IBM CF and walk you through the process of dep
 
 ## Table of Contents
 [1. Overview](https://github.com/usfngm/cf_workshop#ibm-cloud-foundry-simple-example)
-2. Prerequisites
+[2. Prerequisites](https://google.com)
 
 ## Prerequisites
 1. An IBM Account. You can get one [here](https://ibm.biz/BdqBhv)
 2. IBM Cloud Command Line Interface (CLI) from [here](https://github.com/IBM-Cloud/ibm-cloud-cli-release/releases/)
- *under installers, pick your OS along with the correct architecture (32bit/64bit)
+
+   *under installers, pick your OS along with the correct architecture (32bit/64bit)
  3. Hala Wallah
