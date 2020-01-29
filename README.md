@@ -6,3 +6,5 @@ This demo is intented to showcase IBM CF and walk you through the process of dep
 
 1. **A ReactJS frontend *(Located in the [calculator-ui](https://github.com/usfngm/cf_workshop/tree/master/calculator-ui) folder)*:** This component serves the UI and has the code that sends the HTTP request to the NodeJS backend and finally show the result of the division into a textbox.
 2. **A NodeJS backend  *(Located in the [division-service](https://github.com/usfngm/cf_workshop/tree/master/division-service) folder)*:** This component has the division logic and recieves HTTP requests from clients and responds back with the result in JSON format.
+
+![alt text](https://github.com/usfngm/cf_workshop/blob/master/imgs/img_1.png "Simple Architecture")
