@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
   var num2 = parseInt(req.query.num2);
   if (num2 == 0) {
     setTimeout(function () {
-      throw new Error('We crashed!!!!!');
+      throw new Error('Division by zero');
     }, 10);
     res.status(500).send()
   }
@@ -41,10 +41,10 @@ app.use(function fiveHundredHandler(err, req, res, next) {
 
 
 // Start server
-app.listen(3002, function (err) {
+app.listen(3000, function (err) {
   if (err) {
     return console.error(err)
   }
 
-  console.log('Started at http://localhost:3002')
+  console.log('Started at http://localhost:3000')
 })
