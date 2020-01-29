@@ -11,29 +11,25 @@ function App() {
   const [num1, setNum1] = useState();
   const [num2, setNum2] = useState();
   const [result, setResult] = useState(0);
-
-  const addButton = () => {
-    axios.get('http://localhost:3001?num1=' + num1 + '&num2=' + num2).then((result) => {
-      console.log(result.data.result);
-      setResult(result.data.result);
-    }).catch((error) => {
-      console.log(error);
-    });
-  }
+  
+  // Add division service URL here
+  const div_url = '';
 
   const divButton = () => {
-    axios.get('http://localhost:3002?num1=' + num1 + '&num2=' + num2).then((result) => {
+    setResult('Loading...');
+    axios.get(div_url + '?num1=' + num1 + '&num2=' + num2).then((result) => {
       console.log(result.data.result);
       setResult(result.data.result);
     }).catch((error) => {
       console.log(error);
+      setResult('Server Error');
     });
   }
 
   return (
-    <div className="App">
-      <h1>Welcome to my calculator app</h1>
-      <Container>
+    <div className="App" style={{marginTop: 25}}>
+      <h1>Simple Division App</h1>
+      <Container style={{marginTop: 40}}>
         <Form>
           <Row>
             <Col>
@@ -55,13 +51,8 @@ function App() {
         </Form>
         <Form>
           <Row style={{ display: 'flex' }}>
-            <Button onClick={addButton} style={{ flex: 1, marginTop: 20 }}>
-              Addition
-            </Button>
-          </Row>
-          <Row style={{ display: 'flex' }}>
             <Button onClick={divButton} style={{ flex: 1, marginTop: 20 }}>
-              Addition
+              Division
             </Button>
           </Row>
         </Form>
