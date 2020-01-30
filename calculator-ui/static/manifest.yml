@@ -1,9 +1,0 @@
----
-    applications:
-    - name: calculator-ui
-      memory: 128MB
-      disk_quota: 256MB
-      random-route: true
-      buildpacks: 
-        - python_buildpack
-      command: python server.py
