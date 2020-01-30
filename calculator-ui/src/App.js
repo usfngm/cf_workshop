@@ -13,7 +13,7 @@ function App() {
   const [result, setResult] = useState(0);
   
   // Add division service URL here
-  const div_url = '';
+  const div_url = 'http://division-service.eu-gb.mybluemix.net';
 
   const divButton = () => {
     setResult('Loading...');
