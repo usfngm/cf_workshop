@@ -1,0 +1,22 @@
+.mainDiv {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.mainDiv input {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#calcBtn {
+    margin-top: 10px;
+    width: 80%;
+}
