@@ -4,7 +4,7 @@
 
 This demo is intented to showcase IBM CF and walk you through the process of deploying a simple cloud-native application on the cloud. It also showcases some of the CF features like: self-healing & scaling. The dmeo app is a very basic calculator that can only divide two numbers and return the result through a web based UI. The app consists of two main components:
 
-1. **A ReactJS frontend *(Located in the [calculator-ui](https://github.com/usfngm/cf_workshop/tree/master/calculator-ui) folder)*:** This component serves the UI and has the code that sends the HTTP request to the NodeJS backend and finally show the result of the division into a textbox.
+1. **A Simple HTML/CSS frontend served by Flask *(Located in the [calculator-ui](https://github.com/usfngm/cf_workshop/tree/master/calculator-ui) folder)*:** This component serves the UI and has the code that sends the HTTP request to the NodeJS backend and finally show the result of the division into a textbox using a simple JS script.
 2. **A NodeJS backend  *(Located in the [division-service](https://github.com/usfngm/cf_workshop/tree/master/division-service) folder)*:** This component has the division logic and recieves HTTP requests from clients and responds back with the result in JSON format.
 <!-- https://github.com/usfngm/cf_workshop/blob/master/imgs/img_1.png -->
 <p align="center">
@@ -18,7 +18,8 @@ This demo is intented to showcase IBM CF and walk you through the process of dep
     * [3.1 Preparing the IBM Cloud CLI for deployment](#3.1-Preparing-the-IBM-Cloud-CLI-for-deployment)
     * [3.2 Logging into IBM Cloud CLI](#3.2-Logging-into-IBM-Cloud-CLI)
     * [3.3 Downloading the code on your machine](#3.3-Downloading-the-code-on-your-machine)
-4. test
+    * [3.4 Deploying our apps on IBM Cloud Foundry](#3.4-Deploying-our-apps-on-IBM-Cloud-Foundry)
+4. [Conclusion](#Conclusion)
 
 # 2. Prerequisites
 1. An IBM Account. You can get one [here](https://ibm.biz/BdqBhv)
@@ -140,14 +141,16 @@ Notice the url of your app appears at the end after successfully deploying the a
 </p>
 Take note of that url as we will need to feed it to the front end in the next step
 
-To edit the frontend code, open your favourite text editor and open the file named **App.js** inside the following path
+To edit the frontend code, open your favourite text editor and open the file named **script.js** inside the following path
 
-    cf_workshop/calculator-ui/src/App.js
+    cf_workshop/calculator-ui/static/script.js
 <br>
-Copy the url of the division-service app we deployed in the previous step and put it inside the App.js file on line 16 as shown in the below gif: 
+Copy the url of the division-service app we deployed in the previous step and put it inside the App.js file on line 1 as shown in the below gif: 
 <p align="center">
   <img src="imgs/gif_7.gif">
 </p>
+
+*Dont forget to put "http://" before the url*
 
 *Note: If for some reason you lost the app's url and you want to get it again you can visit your account's [resource list](https://cloud.ibm.com/resources) and you will be able to see all your CF apps and thier URLs under **Cloud Foundry Apps**. Another solution is to write the following command on the command line:*
 
@@ -157,7 +160,20 @@ This will give you a list of all yours app and their URLs as well.
 
 <br>
 
-Now after editing your **App.js** file, save it and you are ready to deploy your front end.
-Navigate to the [calculator-ui](https://github.com/usfngm/cf_workshop/tree/master/calculator-ui) folder inside your command line and run the deploy command again
+Now after editing your **script.js** file, save it and you are ready to deploy your front end.
+Navigate to the [calculator-ui](https://github.com/usfngm/cf_workshop/tree/master/calculator-ui) folder inside your command line and run the following
 
-    ibmcloud cf push -m 64m <app name>
+    ibmcloud cf push <app name>
+
+<br>
+
+After successfully deploying the application, take its url and paste it in your browser and the result should look like this:
+
+<p align="center">
+  <img src="imgs/gif_8.gif">
+</p>
+
+# 4. Conclusion
+This demo showcases how easy it is to deploy different apps on IBM Cloud Foundry using the IBM Cloud CLI. Cloud Foundry gives the developers the opporunity to focus totally on their code and forget the hassle of deployment and managing servers.
+
+For any inquires or issues you have faced and not able to solve, please don't hesitate to contact me via my email: youssef.negm@ibm.com

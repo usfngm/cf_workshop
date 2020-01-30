@@ -1,4 +1,4 @@
-const div_srv_url = 'https://division-service.mybluemix.net/';
+const div_srv_url = 'http://division-service.eu-gb.mybluemix.net';
 
 $( document ).ready(function() {
 
