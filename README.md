@@ -13,13 +13,13 @@ This demo is intented to showcase IBM CF and walk you through the process of dep
 
 # Table of Contents
 1. [Overview](#ibm-cloud-foundry-simple-example)
-2. [Prerequisites](#Prerequisites)
-3. [Instructions](#Instructions)
-    * [3.1 Preparing the IBM Cloud CLI for deployment](#3.1-Preparing-the-IBM-Cloud-CLI-for-deployment)
-    * [3.2 Logging into IBM Cloud CLI](#3.2-Logging-into-IBM-Cloud-CLI)
-    * [3.3 Downloading the code on your machine](#3.3-Downloading-the-code-on-your-machine)
-    * [3.4 Deploying our apps on IBM Cloud Foundry](#3.4-Deploying-our-apps-on-IBM-Cloud-Foundry)
-4. [Conclusion](#Conclusion)
+2. [Prerequisites](#2-prerequisites)
+3. [Instructions](#3-instructions)
+    * [3.1 Preparing the IBM Cloud CLI for deployment](#31-preparing-the-ibm-cloud-cli-for-deployment)
+    * [3.2 Logging into IBM Cloud CLI](#32-logging-into-ibm-cloud-cli)
+    * [3.3 Downloading the code on your machine](#33-downloading-the-code-on-your-machine)
+    * [3.4 Deploying our apps on IBM Cloud Foundry](#34-deploying-our-apps-on-ibm-cloud-foundry)
+4. [Conclusion](#conclusion)
 
 # 2. Prerequisites
 1. An IBM Account. You can get one [here](https://ibm.biz/BdqBhv)
