@@ -22,7 +22,7 @@ This demo is intented to showcase IBM CF and walk you through the process of dep
 4. [Conclusion](#4-conclusion)
 
 # 2. Prerequisites
-1. An IBM Account. You can get one [here](https://ibm.biz/BdqBhv)
+1. An IBM Account. You can get one [here](https://ibm.biz/BdqD93)
 2. IBM Cloud Command Line Interface (CLI) from [here](https://github.com/IBM-Cloud/ibm-cloud-cli-release/releases/)
 
    *Under installers, pick your OS along with the correct architecture (32bit/64bit)*
