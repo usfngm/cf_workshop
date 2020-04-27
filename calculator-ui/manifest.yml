@@ -1,5 +1,5 @@
 ---
 applications:
- - name: GetStartedPython
+ - name: CalculatorUI
    random-route: true
-   memory: 128M
+   memory: 64M
